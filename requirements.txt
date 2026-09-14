@@ -1,0 +1,9 @@
+numpy>=1.24,<3
+pandas>=2,<4
+matplotlib>=3.7,<4
+Pillow>=10,<13
+opencv-python-headless>=4.8,<6
+nbformat>=5.9,<6
+nbclient>=0.10,<1
+ipykernel>=6,<8
+jupyterlab>=4,<5

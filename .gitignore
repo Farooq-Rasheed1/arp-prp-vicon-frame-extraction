@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.env
+.env.*
+bags/
+outputs/
+*.db3
+*.db3-*
+*.mcap
+*.bag
+*.zip
