@@ -1,4 +1,4 @@
-# ARP/PRP — Vicon-visible frame extraction
+# Vicon-visible frame extraction
 
 Synchronize Vicon-derived poses with OAK-D depth-image timestamps, project the other robot into each camera, and extract every geometrically visible frame with a projected bounding box. Uses Python and ROS 2 SQLite bag files; a running ROS installation is not required.
 
@@ -31,7 +31,7 @@ To edit interactively:
 jupyter lab notebooks/01_vicon_visible_frame_extraction.ipynb
 ```
 
-For Google Colab, upload the complete repository directory to `MyDrive/arp-prp-vicon-frame-extraction`, open the notebook in Colab, and run all cells. The setup cell mounts Drive and installs dependencies. Opening only the notebook from GitHub does not download its supporting files; the complete repository must also be available in the runtime. Change the setup path if the folder is named differently.
+For Google Colab, upload the complete repository directory to `MyDrive/vicon-frame-extraction`, open the notebook in Colab, and run all cells. The setup cell mounts Drive and installs dependencies. Opening only the notebook from GitHub does not download its supporting files; the complete repository must also be available in the runtime. Change the setup path if the folder is named differently.
 
 ## Full bag extraction
 
@@ -84,6 +84,6 @@ Depth visualization uses a fixed 0.35–6 m Turbo scale (warm near, cool far; in
 - `snippets/phase1_depth/`: 12 raw/annotated examples, a sample manifest, and both complete archived visibility tables.
 - `run_notebook.py`: reproducible execution and smoke checks; generated output is ignored by Git.
 
-Data originates from the ARP/PRP recording of 24 April 2026. The complete tables were copied from `camera_visibility_results`; sample images came from `vicon_gt_frames_tb1_sees_tb2_all` and `vicon_gt_frames_tb2_sees_tb1_all`, with updated previews from the notebook kit. The `visible == 1` tables are archived references, not newly inferred from these 12 samples. The original report and full bags are separate project artifacts.
+Data originates from the two-robot recording of 24 April 2026. The complete tables were copied from `camera_visibility_results`; sample images came from `vicon_gt_frames_tb1_sees_tb2_all` and `vicon_gt_frames_tb2_sees_tb1_all`, with updated previews from the notebook kit. The `visible == 1` tables are archived references, not newly inferred from these 12 samples. The original report and full bags are separate project artifacts.
 
 For another recording, update bag/topic names, intrinsics, camera offsets, clock alignment, and robot dimensions before interpreting visibility or box coordinates.

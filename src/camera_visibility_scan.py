@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline camera observability scan for the ARP/PRP real dataset.
+"""Offline camera observability scan for the real two-robot dataset.
 
 This script intentionally avoids ROS runtime dependencies.  It reads the
 SQLite rosbag2 files directly, extracts Vicon-derived ground-truth odometry
