@@ -2,6 +2,16 @@
 
 Synchronize Vicon-derived poses with OAK-D depth-image timestamps, project the other robot into each camera, and extract every geometrically visible frame with a projected bounding box. Uses Python and ROS 2 SQLite bag files; a running ROS installation is not required.
 
+## Experiment preview
+
+The animations below show Vicon-selected depth frames where the other robot is visible in the camera, with the projected bounding box overlaid.
+
+| TB1 camera sees TB2 | TB2 camera sees TB1 |
+| --- | --- |
+| ![TB1 camera sees TB2](docs/media/tb1_camera_sees_tb2_depth_boxes.gif) | ![TB2 camera sees TB1](docs/media/tb2_camera_sees_tb1_depth_boxes.gif) |
+
+Full MP4 previews are also included: [TB1→TB2](docs/media/tb1_camera_sees_tb2_depth_boxes.mp4) and [TB2→TB1](docs/media/tb2_camera_sees_tb1_depth_boxes.mp4).
+
 ## Quick start
 
 Python 3.11 or newer is recommended. From this repository directory:
